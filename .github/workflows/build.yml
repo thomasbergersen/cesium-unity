@@ -196,7 +196,7 @@ jobs:
       - name: Install jq
         run: sudo apt install jq
       - name: Download macOS build
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: macOS Package
           path: combine/macos
@@ -206,7 +206,7 @@ jobs:
           tar xzf *.tgz
           rm *.tgz
       - name: Download Windows build
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4.1.7
         with:
           name: Windows Package
           path: combine/windows
